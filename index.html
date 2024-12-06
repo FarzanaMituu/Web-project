@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Recipe Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Simple Recipe Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Simple Recipe Hub!</h2>
+        <p>Your go-to source for easy-to-make recipes.</p>
+    </section>
+
+    <section id="recipes">
+        <h2>Our Featured Recipes</h2>
+        <div id="recipe-list">
+           
+            <div class="recipe-card" onclick="showRecipe('bananaBread')">
+                <h3>Banana Bread</h3>
+                <p>A moist, delicious banana treat.</p>
+            </div>
+            <div class="recipe-card" onclick="showRecipe('spaghetti')">
+                <h3>Spaghetti Bolognese</h3>
+                <p>A classic Italian pasta dish.</p>
+            </div>
+            <div class="recipe-card" onclick="showRecipe('salad')">
+                <h3>Fresh Garden Salad</h3>
+                <p>A refreshing and healthy salad.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="recipe-details">
+        <h2>Recipe Details</h2>
+        <div id="recipe-content">
+            <p>Click on a recipe to see details.</p>
+        </div>
+    </section>
+
+    <section id="add-recipe">
+        <h2>Add a New Recipe</h2>
+        <form id="recipe-form">
+            <label for="recipe-title">Recipe Title:</label>
+            <input type="text" id="recipe-title" name="recipe-title" required>
+
+            <label for="recipe-ingredients">Ingredients (comma-separated):</label>
+            <input type="text" id="recipe-ingredients" name="recipe-ingredients" required>
+
+            <label for="recipe-instructions">Instructions:</label>
+            <textarea id="recipe-instructions" name="recipe-instructions" required></textarea>
+
+            <button type="submit">Add Recipe</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Simple Recipe Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
